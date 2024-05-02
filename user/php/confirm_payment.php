@@ -21,7 +21,7 @@ if ($num == 1) {
 
         // File upload configuration 
         $targetDir = "../../payment_images/";
-        $allowTypes = array('jpg', 'jpeg', 'png');
+        $allowTypes = array('jpg', 'jpeg', 'png','jfif');
         // $allowTypes = strtolower($allowTypes); 
 
         // $fileName = basename($_FILES['file']['name']); 

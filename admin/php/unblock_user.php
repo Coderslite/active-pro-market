@@ -7,10 +7,10 @@ $email =$_POST['email'];
 $query = mysqli_query($con, "UPDATE users SET status = 'active' WHERE email = '$email'");
 
 if ($query) {
-    $_SESSION['SuccessMessage']= "User Unblocked Successfully";
+    $_SESSION['SuccessMessage'] = "User Blocked Successfully";
     header('location:../registered_users.php');
-} else { 
-    $_SESSION['SuccessMessage'] = "Failed to unblock user";
+} else {
+    $_SESSION['SuccessMessage'] = "Failed to block user";
     header('location:../registered_users.php');
 }
 

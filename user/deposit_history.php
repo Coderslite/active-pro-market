@@ -34,7 +34,7 @@ include "php/session.php";
         <?php
         $i = 0;
         $email = $_SESSION['email'];
-        $query = "SELECT * FROM deposit WHERE useremail = '$email'";
+        $query = "SELECT * FROM deposit WHERE email = '$email'";
         $query_run = mysqli_query($con, $query);
         if (mysqli_num_rows($query_run) > 0) {
           while ($row = mysqli_fetch_assoc($query_run)) {

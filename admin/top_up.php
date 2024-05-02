@@ -1,113 +1,98 @@
-<?php
-include "includes/header.php";
-include "php/db_config.php";
-include "php/session.php";
+<?php include "includes/header.php";
+
+$email = $_GET['email'];
+
 
 ?>
-<?php
-$email = $_GET['email'];
-$query = mysqli_query($con, "SELECT * FROM users WHERE email ='$email'");
-$currentAmount = 0; 
-if (mysqli_num_rows($query) > 0) {
-  while ($amount = mysqli_fetch_assoc($query)) {
-    $currentAmount = $currentAmount + $amount['profit'];
-  }
-}
-?>
-<div class="page-wrapper">
-  <div class="col-md-6 py-5">
-    <h4>Top Client Balance</h4>
-    <h5>Current Amount : <?php echo $currentAmount ?></h5>
-    <form action="" id="top-up">
-      <!-- <input type="number" name="" id="" placeholder="<?php echo $currentAmount ?>" class="form-control" disabled> -->
-      <input type="hidden" name="amount" class="form-control" value="<?php echo $currentAmount ?>">
-      <input type="text" name="top_up" class="form-control" id="top_up">
-      <input type="hidden" name="email" class="form-control" value="<?php echo $email ?>">
-      <input type="submit" value="Top Up" class="btn btn-success">
-    </form>
-  </div>
+
+<!--**********************************
+            Content body start
+        ***********************************-->
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid">
+        <form id="top_up">
+            <div class="form-group">
+                <label for="">Amount</label>
+                <input type="number" class="form-control" id="myAmount" name="amount" required>
+                <input type="hidden" name="email" value="<?php echo $email ?>">
+            </div>
+            <div class="form-group">
+                <label for="">What to Top Up</label>
+               <select name="top_up" id="" class="form-control" required>
+                <option value=""></option>
+                <option value="profit">Profit</option>
+                <option value="invested">Invested</option>
+                <!-- <option value="bonus">Bonus</option> -->
+               </select>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Procced</button>
+            </div>
+        </form>
+    </div>
 </div>
 
-<?php
-include "includes/footer.php";
-
-?>
-
+<?php include "includes/footer.php"; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.js"></script>
+
 <script>
-  $(document).ready(function() {
-    $("#top_up").keydown(function(event) {
-
-
-      if (event.shiftKey == true) {
-        event.preventDefault();
-      }
-
-      if ((event.keyCode >= 48 && event.keyCode <= 57) ||
-        (event.keyCode >= 96 && event.keyCode <= 105) ||
-        event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 37 ||
-        event.keyCode == 39 || event.keyCode == 46 || event.keyCode == 190) {
-
-      } else {
-        event.preventDefault();
-      }
-
-      if ($(this).val().indexOf('.') !== -1 && event.keyCode == 190)
-        event.preventDefault();
-      //if a decimal has been added, disable the "."-button
-
-    });
-
-    $('#top-up').on('submit', function(e) {
-      e.preventDefault();
-      var formData = new FormData(this);
-      $.ajax({
+$("#top_up").submit(function(e) {
+    e.preventDefault();    
+    var formData = new FormData(this);
+    $.ajax({
         url: 'php/top_up.php',
-        type: 'POST',
-        contentType: false,
-        cache: false,
-        processData: false,
-        data: formData,
-        dataType: 'json',
-        beforeSend: function() {
-          Swal.fire({
-            html: '<div style="font-size: 15px; width:4rem; height:4rem;" class="spinner-border"></div>',
-            showConfirmButton: false
-          });
-        },
-        success: function(data) {
-          if (data.trim() == 'success') {
-
+               type: 'POST',
+               data: formData,
+               cache: false,
+               contentType: false,
+               processData: false,
+        beforeSend:function(){
             Swal.fire({
-              icon: 'success',
-              html: '<div class="">Top up Successful</div>',
-              showConfirmButton: true,
-              allowOutsideClick: false,
-              confirmButtonText: 'Done'
-            }).then((result) => {
-              location.href = "registered_users.php";
-            })
-          } else if (data.trim() == 'failed') {
-
-            Swal.fire({
-              icon: 'error',
-              html: '<div class="">Something went wrong</div>',
-              showConfirmButton: true,
-              allowOutsideClick: false,
-              confirmButtonText: 'OK'
-            })
-          };
+            html:'<div style="font-size: 15px; width:4rem; height:4rem;" class="spinner-border"></div>',
+            showConfirmButton:false
+            });
+        
         },
-        error: function() {
-          Swal.fire({
-            icon: 'error',
-            html: '<div class"">Failed</div>',
-            showConfirmButton: true,
-            allowOutsideClick: true,
-          })
-        }
-      })
-    })
-  })
+        success: function (data) {
+            if(data.trim() == 'success'){
+                
+                Swal.fire({
+                icon:'success',					
+                html:'<div class=""> Top Up Succsessful</div>',
+                showConfirmButton:true,
+                allowOutsideClick:false
+                }).then((result) => {
+                    location.href="registered_users.php";	// location.href="";
+
+                })
+                }
+                else if(data.trim() == 'failed'){
+                Swal.fire({
+                icon:'error',					
+                html:'<div class="">Failed to top up</div>',
+                showConfirmButton:true,
+                allowOutsideClick:false
+                })
+                }
+                else{
+                    Swal.fire({
+                    icon:'error',
+                    // html:data,
+                html:'<div class="">Failed</div>',
+                    allowOutsideClick:false
+                    });
+                }		
+        },
+        error:function(){
+            Swal.fire({
+                    icon:'error',
+                    html:'<div>something went wrong</div>',
+                    allowOutsideClick:false
+                    });
+        },
+    });
+});
+
 </script>

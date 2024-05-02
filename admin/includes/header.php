@@ -1,161 +1,225 @@
+
 <?php
-session_start();
-require_once "includes/security.php";
+session_start();                  
+include "php/security.php";
+$email = $_SESSION['email'];
+include "php/db_config.php";
+
+
+$userquery = mysqli_query($con, "SELECT* FROM users WHERE email = '$email'");
+if (mysqli_num_rows($userquery) > 0) {
+    while ($row = mysqli_fetch_assoc($userquery)) {
+        $fname = $row['fullName'];
+    }
+}
 ?>
 
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 
+<!-- Mirrored from makaanlelo.com/tf_products_007/Metaminerfc/xhtml/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 17:26:45 GMT -->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 4 admin, bootstrap 4, css3 dashboard, bootstrap 4 dashboard, Monsterlite admin bootstrap 4 dashboard, frontend, responsive bootstrap 4 admin template, Monster admin lite design, Monster admin lite dashboard bootstrap 4 dashboard template">
-    <meta name="description" content="Monster Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
-    <meta name="robots" content="noindex,nofollow">
-    <title>AFT</title>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.min.css"> -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.js"></script>
-    <link rel="canonical" href="https://www.wrappixel.com/templates/monster-admin-lite/" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="admin, dashboard" />
+	<meta name="author" content="DexignZone" />
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:title" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:description" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:image" content="../../../../Metaminerfc.dexignzone.com/xhtml/social-image.png"/>
+	<meta name="format-detection" content="telephone=no">
+    <title>Metaminerfc - Crypto Admin Dashboard </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <!-- Custom CSS -->
-    <link href="assets/plugins/chartist/dist/chartist.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+	<link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="../libs/js/jquery-2.2.4.min.js"></script>
 
+</head>
 <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <div class="lds-ripple">
-            <div class="lds-pos"></div>
-            <div class="lds-pos"></div>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
         </div>
     </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar" data-navbarbg="skin6">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header" data-logobg="skin6">
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand justify-content-center" href="index.html">
-                        <!-- Logo icon -->
-                        <b class="logo-icon">
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+    <!--*******************
+        Preloader end
+    ********************-->
 
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span class="logo-text">
-                            <!-- dark Logo text -->
-                            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
 
-                        </span>
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <a class="nav-toggler waves-effect waves-light text-dark d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <!-- <a href="index.php" class="brand-logo" >
+    <h2>METAMINERFX</h2> 
+            </a> -->
+
+            <div class="nav-control" style="margin-right: 50px;">
+                <div class="hamburger">
+                    <span class="line" ></span><span class="line"></span><span class="line"></span>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                    <ul class="navbar-nav d-none d-md-block d-lg-none">
-                        <li class="nav-item">
-                            <a class="nav-toggler nav-link waves-effect waves-light text-white" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-                        </li>
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav mr-auto mt-md-0 ">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-
-                        <li class="nav-item hidden-sm-down">
-                            <form class="app-search pl-3">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
-                            </form>
-                        </li>
-                    </ul>
-
-                    <!-- ============================================================== -->
-                    <!-- Right side toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav">
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class="profile-pic mr-2">Admin</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <aside class="left-sidebar" data-sidebarbg="skin6">
-            <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
-                <!-- Sidebar navigation-->
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
-                        <!-- User Profile-->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="index.php" aria-expanded="false"><i class="mr-3 fa fa-user" aria-hidden="true"></i><span class="hide-menu">Account</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="registered_users.php" aria-expanded="false">
-                                <i class="mr-3 fa fa-user" aria-hidden="true"></i><span class="hide-menu">Registered Users</span></a>
-                        </li>
-                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="trade_history.php" aria-expanded="false"><i class="mr-3 fa fa-table"
-                                    aria-hidden="true"></i><span class="hide-menu">Trade History</span></a></li> -->
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="deposit_confirmation.php" aria-expanded="false"><i class="mr-3 fas fa-arrow-down text-success" aria-hidden="true"></i><span class="hide-menu">Deposit Confirmation</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="withdrawal_history.php" aria-expanded="false"><i class="mr-3 fa fa-columns" aria-hidden="true"></i><span class="hide-menu">Withdrawal History</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="deposit_history.php" aria-expanded="false"><i class="mr-3 fa fa-info-circle" aria-hidden="true"></i><span class="hide-menu">Deposit History</span></a></li>
-                        <li class="text-center p-20 upgrade-btn">
-                            <form action="php/logout.php" method="POST">
-                                <button type="submit" name="logout" class="btn btn-danger text-white mt-4">Logout</a>
-                            </form>
-                        </li>
-                    </ul>
-
-                </nav>
-                <!-- End Sidebar navigation -->
             </div>
-            <!-- End Sidebar scroll-->
-        </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+               
+                        <a href="index.php" class="brand-logo mr-5" >
+    <h2>Activeglobalfx</h2> 
+            </a>
+                        <ul class="navbar-nav header-right mr-5">
+
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="images/profile/pic1.jpg" width="20" alt=""/>
+									<div class="header-info">
+										<!-- <span>Abraham Great</span> -->
+										<span><?php echo $fname?></span>
+									</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ms-2">Profile </span>
+                                    </a>
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <span class="ms-2">Inbox </span>
+                                    </a>
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ms-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+		<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="dashboard_bar">
+                              Admin  Dashboard
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                    <img src="images/profile/pic1.jpg" width="20" alt=""/>
+									<div class="header-info">
+										<!-- <span>Abraham Great</span> -->
+										<span><?php echo $fname?></span>
+									</div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ms-2">Profile </span>
+                                    </a>
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <span class="ms-2">Inbox </span>
+                                    </a>
+                                    <a href="" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ms-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="deznav">
+            <div class="deznav-scroll">
+				<ul class="metismenu" id="menu">
+                    <li><a class="ai-icon" href="index.php" aria-expanded="false">
+							<i class="flaticon-381-networking"></i>
+							<span class="nav-text">Account Overview</span>
+						</a>
+
+                    </li>
+                    <li><a class="ai-icon" href="registered_users.php" aria-expanded="false">
+						<i class="flaticon-381-television"></i>
+							<span class="nav-text">Registered Users</span>
+						</a>
+                    </li>
+                    <li><a class="ai-icon" href="deposit_confirmation.php" aria-expanded="false">
+							<i class="flaticon-381-controls-3"></i>
+							<span class="nav-text">Deposit Confirmation</span>
+						</a>
+                    </li>
+                    <li><a class="ai-icon" href="withdraw_confirmation.php" aria-expanded="false">
+							<i class="flaticon-381-controls-3"></i>
+							<span class="nav-text">Withdraw Confirmation</span>
+						</a>
+                    </li>
+                    <li><a class="ai-icon" href="withdraw_history.php" aria-expanded="false">
+							<i class="flaticon-381-internet"></i>
+							<span class="nav-text">Withdraw History</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="deposit_history.php" aria-expanded="false">
+							<i class="flaticon-381-heart"></i>
+							<span class="nav-text">Deposit History</span>
+						</a>
+                    </li>
+                    <li class="py-5">
+                        <form action="php/logout.php" method="POST">
+                        <button type="submit" name="logout" class="btn btn-danger btn-block" aria-expanded="false">
+							<i class="flaticon-381-network"></i>
+							<span class="nav-text">Logout</span>
+                        </button>
+                        </form>
+                    </li>
+                   
+                </ul>
+            
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->

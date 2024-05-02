@@ -1,21 +1,21 @@
-<?php
-include "includes/header.php";
-?>
+<?php include "includes/header.php";?>
 
-<div class="page-wrapper">
-    <div class="container py-5">
-        <h2 class="text-center">Proceed to payment</h2>
-        <p class="text-center">This wallet address will expire in 5mins</p>
-        <p class="text-center">Make payment of USD 5 using the qrcode or wallet address below</p>
-        <img src="assets/images/qr-code.png" alt="" width="200vw" class="d-flex m-auto">
-        <div class="copy justify-content-center d-flex m-auto">
-        <span class="bg-white p-2 mt-2">1NsmkVtZKpUqyArGxd9A7DXVYKjk3cE5E5<span></span><span class="btn btn-success mx-2">copy</span>
+ <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <!-- row -->
+			<div class="container-fluid">
+
+            <h1>Make deposit to the wallet below</h1>
+                <div class="alert bg-warning">
+                    <h3 class="text-white">Your account will be credited immediately your payment is confirmed</h3>
+                </div>
+            <div class="row">
+                <span style="border-width: 10px; border-color:black;">bc1qp49gahey4gufmkc8etuzgl3zlp5c0h4k6ezrja<span class="btn btn-primary m-2">copy</span></span>
+            </div>
+
+            </div>
         </div>
-        <a href="confirm_payment.php" class="btn btn-success">Confirm Payment</a>
-        <h5>Note: h5ayment should be made only to the wallet address above, and confirm payment after deposit has been made.</h5>
-    </div>
-</div>
 
-<?php
-include "includes/footer.php";
-?>
+<?php include "includes/footer.php";?>

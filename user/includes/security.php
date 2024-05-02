@@ -1,7 +1,7 @@
 <?php
 if(!$_SESSION['email'])
 {
-	header('location:../login.html');
+	header('location:../authentication/login.html');
 }
 
 ?>

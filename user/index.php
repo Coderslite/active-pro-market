@@ -34,7 +34,7 @@ require_once "includes/header.php";
     <?php
     include "php/db_config.php";
     $email = $_SESSION['email'];
-    $fetchRecord = mysqli_query($con, "SELECT * FROM deposit WHERE useremail = '$email' && status = 'confirmed' ");
+    $fetchRecord = mysqli_query($con, "SELECT * FROM deposit WHERE email = '$email' && status = 'confirmed' ");
     $amount = 0;
     $bonus = 0;
     if (mysqli_num_rows($fetchRecord) > 0) {
@@ -50,6 +50,15 @@ require_once "includes/header.php";
         <!-- ============================================================== -->
         <!-- Sales chart -->
         <!-- ============================================================== -->
+        <?php
+             $fetchProfit = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'");
+             if (mysqli_num_rows($fetchProfit) > 0) {
+                while ($row = mysqli_fetch_assoc($fetchProfit)) {
+                    $profit = $row['profit'];
+                    $currency = $row['currency'];
+                }
+            }
+            ?>
         <div class="row">
             <!-- Column -->
             <div class="col-sm-6">
@@ -57,7 +66,7 @@ require_once "includes/header.php";
                     <div class="card-body">
                         <h4 class="card-title">Balance</h4>
                         <div class="text-right">
-                            <h2 class="font-light m-b-0">R<?php echo $amount ?></h2>
+                            <h2 class="font-light m-b-0"><?php echo $currency." ". $amount ?></h2>
                         </div>
                         <a href="deposit.php" class="btn btn-success text-white">Deposit <i class="fas fa-arrow-down"></i></a href="deposit.php">
 
@@ -65,13 +74,14 @@ require_once "includes/header.php";
                 </div>
             </div>
             <!-- Column -->
+       
             <!-- Column -->
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Bonus Balance</h4>
                         <div class="text-right">
-                            <h2 class="font-light m-b-0">R<?php echo $bonus ?></h2>
+                            <h2 class="font-light m-b-0"><?php echo $currency." ". $bonus ?></h2>
                         </div>
                         <a href="withdraw.php" class="btn btn-danger ">Withdraw <i class="fas fa-arrow-up"></i></a>
                     </div>
@@ -79,14 +89,7 @@ require_once "includes/header.php";
             </div>
             <!-- Column -->
             <!-- Column -->
-            <?php
-             $fetchProfit = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'");
-             if (mysqli_num_rows($fetchProfit) > 0) {
-                while ($row = mysqli_fetch_assoc($fetchProfit)) {
-                    $profit = $row['profit'];
-                }
-            }
-            ?>
+        
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
@@ -96,7 +99,7 @@ require_once "includes/header.php";
                                 echo "no profit yet";
                             }
                             else{
-                                echo "R".$profit;
+                                echo $currency." ".$profit;
                             } ?></h2>
                         </div>
                         <a href="deposit.php" class="btn btn-success text-white">Profit <i class="fas fa-arrow-down"></i></a href="deposit.php">
