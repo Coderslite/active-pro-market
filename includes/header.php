@@ -5,6 +5,19 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <!-- /Added by HTTrack -->
     <head>
+
+        <!-- Smartsupp Live Chat script -->
+        <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '987e04ff5f3a8c18b44f94618da41d7025e33557';
+        window.smartsupp||(function(d) {
+        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+        c.type='text/javascript';c.charset='utf-8';c.async=true;
+        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+        })(document);
+        </script>
+
         <!-- <script>
         if(document.location.protocol == 'http:' || document.location.protocol != "https:"){
         location.href='https://'+document.location.host+document.location.pathname;    

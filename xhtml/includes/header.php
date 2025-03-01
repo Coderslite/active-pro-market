@@ -18,7 +18,18 @@ if (mysqli_num_rows($userquery) > 0) {
 
 <!-- Mirrored from makaanlelo.com/tf_products_007/Metaminerfc/xhtml/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 17:26:45 GMT -->
 <head>
-<script src="//code.tidio.co/umbaafasznq5woxfys6ka7xrnrq1in2l.js" async></script>
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '987e04ff5f3a8c18b44f94618da41d7025e33557';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="admin, dashboard" />
