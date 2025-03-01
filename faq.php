@@ -27,7 +27,7 @@ include "includes/header.php";
   
     
       
-  <h1><span>About Activepromarket</span>
+  <h1><span>About Autoglobalfx</span>
 </h1>
 
 
@@ -65,25 +65,25 @@ include "includes/header.php";
     <div class="container">
         <div class="card bg-gray">
             <button class="btn btn-info faq-header text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa fa-plus-circle "></i> &nbsp; Who is Activepromarket?
+                <i class="fa fa-plus-circle "></i> &nbsp; Who is Autoglobalfx?
             </button>
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    Activepromarket is one of the world's leading Forex CFD provider. 
+                    Autoglobalfx is one of the world's leading Forex CFD provider. 
                     The company was incorporated with the vision of providing fair and transparent Forex trading to active traders. 
-                    Activepromarket is dedicated to bringing solutions previously only available to professionals and large global investment banks to retail investors and traders around the world. 
-                    For additional information about Activepromarket, please visit the About Us page.
+                    Autoglobalfx is dedicated to bringing solutions previously only available to professionals and large global investment banks to retail investors and traders around the world. 
+                    For additional information about Autoglobalfx, please visit the About Us page.
                 </div>
             </div>
         </div>
         <div class="card bg-gray">
             <button class="btn btn-info faq-header text-left" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="true" aria-controls="collapseOne">
-                <i class="fa fa-plus-circle "></i> &nbsp; Who Owns Activepromarket? 
+                <i class="fa fa-plus-circle "></i> &nbsp; Who Owns Autoglobalfx? 
             </button>
             <div id="c1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    Activepromarket is a privately owned company. Activepromarket’ management team is comprised of individuals with over 20 years' experience in derivative products.
-                     Activepromarket’ founders were instrumental in the success of one of the largest CFD  provider.
+                    Autoglobalfx is a privately owned company. Autoglobalfx’ management team is comprised of individuals with over 20 years' experience in derivative products.
+                     Autoglobalfx’ founders were instrumental in the success of one of the largest CFD  provider.
                 </div>
             </div>
         </div>
@@ -229,7 +229,7 @@ We also strongly suggest to thoroughly read our Account Terms available for the 
             </button>
             <div id="c14" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">         
-                    No, you are free to earn from our affiliate program without having to make an investment directly with Activepromarket
+                    No, you are free to earn from our affiliate program without having to make an investment directly with Autoglobalfx
                 </div>
             </div>
         </div>

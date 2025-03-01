@@ -164,7 +164,7 @@ United States
                                                             <div class="icon-wrapper">
                                                                 <i class="fa fa-envelope"></i>
                                                             </div>
-                                                            <p id="i56">support@Brais Company.com</p>
+                                                            <p id="i56">support@Autoglobalfx.com</p>
                                                         </div>
                                                     </div>
                                                 </div>

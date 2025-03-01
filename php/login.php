@@ -1,13 +1,4 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'composer/vendor/autoload.php';
-
-require 'composer/vendor/phpmailer/phpmailer/src/Exception.php';
-require 'composer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require 'composer/vendor/phpmailer/phpmailer/src/SMTP.php';
-
-
 session_start();
 include "db_config.php";
 

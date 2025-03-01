@@ -154,7 +154,7 @@ function myFunction() {
                                                             <div class="dropdown-menu">
                                                                 <a class="dropdown-item" href="top_up.php?email=<?php echo $row['email'] ?>">Top UP</a>
                                                                 <a class="dropdown-item" href="debit_from.php?email=<?php echo $row['email'] ?>">Debit From</a>
-
+                                                                <a class="dropdown-item" href="message.php?email=<?php echo $row['email'] ?>">Message</a>
                                            
                                             <?php if ($row['status'] == 'blocked') {
                                                 echo '  <form action="php/unblock_user.php" method="POST">

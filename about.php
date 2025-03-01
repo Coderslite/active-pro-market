@@ -10,7 +10,7 @@ include "includes/header.php";
 
 
 
-        <h1><span>About Activepromarket</span>
+        <h1><span>About Autoglobalfx</span>
         </h1>
 
 
@@ -50,10 +50,10 @@ include "includes/header.php";
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5">
-                                <span class="section-title">About Activepromarket</span>
-                                <h2 class="section-summary">The future is bright with Activepromarket</h2>
+                                <span class="section-title">About Autoglobalfx</span>
+                                <h2 class="section-summary">The future is bright with Autoglobalfx</h2>
                                 <div class="about-company-txt">
-                                    <p>Activepromarket is one of largest forex and cryptocurrency brands around. At Activepromarket International we work hard to make sure our clients make the best trading and investment decisions.
+                                    <p>Autoglobalfx is one of largest forex and cryptocurrency brands around. At Autoglobalfx International we work hard to make sure our clients make the best trading and investment decisions.
                                         Our broad range of services enable you to get the best guidance, advice and resources to build a richer future</p>
                                     <p> We work day and night to create and sustain a forex and cryptocurrencies trading
                                         environment that helps everyone access the markets – from first-timers to those who’ve turned trading into a career.</p>
@@ -128,7 +128,7 @@ include "includes/header.php";
                             <div class="container-fluid p-5">
                                 <h4>Entry to the financial markets for everyone</h4>
                                 <p class="lead">
-                                    With Activepromarket International, you have everything you need to start trading forex, metals, cryptocurrencies and commodity futures CFDs.
+                                    With Autoglobalfx International, you have everything you need to start trading forex, metals, cryptocurrencies and commodity futures CFDs.
                                     Benefit from trading tools, interbank liquidity, advanced trading platforms and financial news to help you on your way.
                                 </p>
                             </div>
@@ -139,9 +139,9 @@ include "includes/header.php";
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 third">
                             <div class="container-fluid p-5">
-                                <h4>Millions of Activepromarket clients can’t be wrong</h4>
+                                <h4>Millions of Autoglobalfx clients can’t be wrong</h4>
                                 <p class="lead">
-                                    At Activepromarket International, part of our mission is to keep that standard of excellence high. We provide a forex trading environment that is trustworthy,
+                                    At Autoglobalfx International, part of our mission is to keep that standard of excellence high. We provide a forex trading environment that is trustworthy,
                                     reliable and technologically advanced, while ensuring every client receives impeccable customer service.
                                 </p>
                             </div>
@@ -150,7 +150,7 @@ include "includes/header.php";
                             <div class="container-fluid p-5">
                                 <h4>Flexible trading options to suit your needs</h4>
                                 <p class="lead">
-                                    Smart investment means having a variety of options. With Activepromarket International, you can trade and invest the way you want to, by choosing independent trading or joining Activepromarket Invest and following strategies from experienced traders.
+                                    Smart investment means having a variety of options. With Autoglobalfx International, you can trade and invest the way you want to, by choosing independent trading or joining Autoglobalfx Invest and following strategies from experienced traders.
                                     With our Loyalty Cashback program, you can also get back part of your funds on different types of commission.
                                 </p>
                             </div>

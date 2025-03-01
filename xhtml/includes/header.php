@@ -1,4 +1,3 @@
-
 <?php
 session_start();                  
 include "php/security.php";
@@ -86,7 +85,7 @@ if (mysqli_num_rows($userquery) > 0) {
                     <div class="collapse navbar-collapse justify-content-between">
                
                         <a href="index.php" class="brand-logo mr-5" >
-    <h2>ACTIVEGLOBALFX</h2> 
+    <h2>Autoglobalfx</h2> 
             </a>
                         <ul class="navbar-nav header-right mr-5">
 

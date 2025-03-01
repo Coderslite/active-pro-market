@@ -7,7 +7,7 @@ $email = $_GET['email'];
 
 <!DOCTYPE html>
 <html>
-<!-- Mirrored from Activepromarket.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 May 2021 10:25:20 GMT -->
+<!-- Mirrored from Autoglobalfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 May 2021 10:25:20 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
 <!-- /Added by HTTrack -->
@@ -19,15 +19,15 @@ $email = $_GET['email'];
 }
     </script> -->
     <meta charset="UTF-8">
-    <meta name="title" content="Brais Company - Best Online Trading Platform">
-    <meta name="description" content="Brais Company - the most convenient online trading interface. &lt;br> Instant access to trade options more than 150 assets of currencies, cryptocurrencies and companies shares.">
+    <meta name="title" content="Autoglobalfx - Best Online Trading Platform">
+    <meta name="description" content="Autoglobalfx - the most convenient online trading interface. &lt;br> Instant access to trade options more than 150 assets of currencies, cryptocurrencies and companies shares.">
     <meta name="keywords" content="online trading service on financial markets">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:url" content="en/index.php">
-    <meta property="og:title" content="Brais Company - Best Online Trading Platform">
+    <meta property="og:title" content="Autoglobalfx - Best Online Trading Platform">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Brais Company broker">
+    <meta property="og:description" content="Autoglobalfx broker">
     <meta property="og:image" content="img/logo_dark.png">
     <meta property="og:image:secure_url" content="img/logo_dark.png">
     <link rel="shortcut icon" type="image/png" href="images/fav.png">
@@ -385,7 +385,7 @@ $email = $_GET['email'];
             overflow: hidden;
         }
     </style>
-    <title>Home - Activepromarket</title>
+    <title>Home - Autoglobalfx</title>
     <script src="js/jquery.waypoints.js" type="text/javascript"></script>
     <style type="text/css">
         img.img-fluid.curve-img {
@@ -700,8 +700,8 @@ $email = $_GET['email'];
                                                     </li>
                                                     <li>
                                                         <i class="far fa-envelope"></i>
-                                                        <a href="mailto:Support@Activepromarket.com">
-                                                            <span>Support@Activepromarket.com</span>
+                                                        <a href="mailto:Support@Autoglobalfx.com">
+                                                            <span>Support@Autoglobalfx.com</span>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -809,7 +809,7 @@ opacity: 0.9; z-index: 999;">
     <!-- }); -->
     <!-- </script> -->
 </body>
-<!-- Mirrored from Activepromarket.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 May 2021 10:26:38 GMT -->
+<!-- Mirrored from Autoglobalfx.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 May 2021 10:26:38 GMT -->
 
 </html>
 

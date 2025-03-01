@@ -414,7 +414,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">STARTER ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R2000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit $100</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 3.3 pips
                                     </p>
@@ -438,7 +438,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">BASIC ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R6,000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit $5,000</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 3.3 pips
                                     </p>
@@ -465,7 +465,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">BRONZE ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R20,000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit $10,000</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 2.2 pips
                                     </p>
@@ -495,7 +495,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">SILVER ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R50,000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit $25,000</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 1.5 pips
                                     </p>
@@ -528,7 +528,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">GOLD ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R100,000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit $50,000</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 1.0 pips
                                     </p>
@@ -564,7 +564,7 @@ include "includes/header.php";
                                     <h4 class="text-white text-center">PLATINUM ACCOUNT</h4>
                                 </div>
                                 <div class="card-body">
-                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit R150,000</p>
+                                    <p class="text-center font-18" style="color: #f4be2f;">Minimum Deposit 5 bitcoin</p>
                                     <p class="font-16">
                                         <i class="fa fas fa-check"></i> Spreads from 0.5 pips
                                     </p>
@@ -831,7 +831,7 @@ include "includes/header.php";
                                                             <div class="col-lg-6">
                                                                 <span class="section-title">Testimonial</span>
                                                                 <h2 class="section-summary">
-                                                                    <a href="testimonial.php"> What people say about Activepromarket >></a>
+                                                                    <a href="testimonial.php"> What people say about Autoglobalfx >></a>
                                                                 </h2>
                                                             </div>
                                                         </div>
@@ -843,7 +843,7 @@ include "includes/header.php";
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <span class="section-title">Testimonial</span>
-                                            <h2 class="section-summary">What people say about Active Pro Market Company</h2>
+                                            <h2 class="section-summary">What people say about Autoglobalfx Company</h2>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -882,7 +882,7 @@ include "includes/header.php";
                         <div class="section-wrap" style="opacity: 1;">
                             <div class="clearfix">
                                 <h2>What Makes
-                                    <br>Activepromarket
+                                    <br>Autoglobalfx
                                     <br>Different?
                                 </h2>
                                 <div class="sec6-text">

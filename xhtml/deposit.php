@@ -200,6 +200,7 @@ if (mysqli_num_rows($userquery) > 0) {
 				<select name="method" id="" class="form-control" required>
 					<option value="">--select payment gateway--</option>
 					<option value="bitcoin">Bitcoin</option>
+					<option value="usdt">USDT</option>
 					<!-- <option value="ethereum">Ethereum</option> -->
 				</select>
 				</div>

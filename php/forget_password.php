@@ -11,24 +11,31 @@ if ($num != 1){
     $result = "not_exist";
 }
 else{        
-        $mail = new PHPMailer();
-        // configure an SMTP
+    $mail = new PHPMailer();
+    //Set mailer to use smtp
         $mail->isSMTP();
-        $mail->Host = 'localhost';
-        $mail->SMTPAuth = false;
-        $mail->SMTPAutoTLS = false; 
-        $mail->Port = 25;
-        // Sender info 
-        $mail->setFrom('support@activepromarket.com', 'Active Pro Market');
-        
-        // Add a recipient 
-        $mail->addAddress($email, 'Me');
-        
-        // Set email format to HTML 
-        $mail->isHTML(true); 
-        
+    //Define smtp host
+        $mail->Host = "autoglobalfx.com";
+    //Enable smtp authentication
+        $mail->SMTPAuth = true;
+    //Set smtp encryption type (ssl/tls)
+        $mail->SMTPSecure = "ssl";
+    //Port to connect smtp
+        $mail->Port = "465";
+    //Set gmail username
+        $mail->Username = "support@autoglobalfx.com";
+    //Set gmail password
+        $mail->Password = "Autoglobalfx$$";
+    //Email subject
+    $mail->Subject = 'Reset Password';
+    //Set sender email
+        $mail->setFrom('support@autoglobalfx.com');
+    //Enable HTML
+    $mail->isHTML(true);
+
+    $mail->setFrom('support@autoglobalfx.com', 'Autoglobalfx');
+
         // Mail subject 
-        $mail->Subject = 'Reset Password';
 
         // Mail body content 
         // $bodyContent = 
@@ -38,7 +45,7 @@ else{
         // <body>
         // <h2>Account Created Successful</h2>
         // <h5>Dear '.$fname.' '.$lname.', '.'your account has been created successful, click the link below to activate your account.</h5>
-        // <a href="https://www.activepromarket.com?username='.$fname .' '.$lname.'&email='.$email.'>activate now</a>
+        // <a href="https://www.autoglobalfx.com?username='.$fname .' '.$lname.'&email='.$email.'>activate now</a>
         // <body>
         // </html>';
         // $bodyContent .= $template; 
@@ -47,10 +54,10 @@ else{
         <head></head>
         <body>
         Password reset requested.  <br> click on the link below to change your password
-        <a href="https://www.activepromarket.com/reset_password.php?email='.$email.'">reset password</a>
+        <a href="https://www.autoglobalfx.com/reset_password.php?email='.$email.'">reset password</a>
         </body>
         </html>';
-        $mail->AltBody = 'Password reset requested.  <br> click on the link below to change your password <a href="https://www.activepromarket.com/reset_password.php?email='.$email.'">reset password</a>';
+        $mail->AltBody = 'Password reset requested.  <br> click on the link below to change your password <a href="https://www.autoglobalfx.com/reset_password.php?email='.$email.'">reset password</a>';
         if($mail->send()){
                   // $_SESSION['email'] = $email;
                    $result= 'success';

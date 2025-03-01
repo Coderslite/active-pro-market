@@ -10,7 +10,7 @@ include "includes/header.php";
 
 
 
-        <h1><span>About Activepromarket</span>
+        <h1><span>About Autoglobalfx</span>
         </h1>
 
 
@@ -46,7 +46,7 @@ include "includes/header.php";
             </div>
             <div class="pt-5 pl-4 pr-4 pb-5">
 
-                <!-- <a href="Terms%20And%20Conditions%20-%20Activepromarket.com.pdf">Terms And Conditions - Activepromarket.com.pdf<i class="fa fa-download"></i></a> -->
+                <!-- <a href="Terms%20And%20Conditions%20-%20GlobalUtraFx.com.pdf">Terms And Conditions - Autoglobalfx.com.pdf<i class="fa fa-download"></i></a> -->
             </div>
             <div class="g-gray pt-5 pl-4 pr-4 pb-5">
                 <h3>
@@ -77,11 +77,11 @@ include "includes/header.php";
                 </p>
                 <p>CFTC the United States Commodity Futures Trading Commission.
                 </p>
-                <p>Client Terminal the MT4 Pro program, which is used by the Customer to obtain information on financial markets (which content is defined by Activepromarket) in real-time, make Transactions, view account equity, place Orders, as well as to receive notices from Activepromarket.
+                <p>Client Terminal the MT4 Pro program, which is used by the Customer to obtain information on financial markets (which content is defined by Autoglobalfx) in real-time, make Transactions, view account equity, place Orders, as well as to receive notices from Autoglobalfx.
                 </p>
-                <p>Complaint (a) a conflict situation where the Customer reasonably believes that Activepromarket as a result of any action or failure to act has breached one or more terms of the Terms of Business; (b) a conflict situation when Activepromarket reasonably believes that the Customer, as a result of any action or failure to act, has breached one or
+                <p>Complaint (a) a conflict situation where the Customer reasonably believes that Autoglobalfx as a result of any action or failure to act has breached one or more terms of the Terms of Business; (b) a conflict situation when Autoglobalfx reasonably believes that the Customer, as a result of any action or failure to act, has breached one or
                     more terms of the Terms of Business; (ca conflict situation where the Customer makes a deal at an Error Quote/Spike, or before the first Quote comes to the Trading Platform on the Market Opening, or at the Quote received by the Customer because a Dealer made a Manifest Error or because of a software failure of the Trading Platform;
-                    (d) a Trading Dispute; or (e) any other issue relating to fair and ethical trading through Activepromarket or the Trading Platform.
+                    (d) a Trading Dispute; or (e) any other issue relating to fair and ethical trading through Autoglobalfx or the Trading Platform.
                 </p>
                 <p>Completed Transaction two offsetting positions of the same volume.
                 </p>
@@ -89,11 +89,11 @@ include "includes/header.php";
                 </p>
                 <p>Currency Pair a quotation of two different currencies, which is based on the change in the value of one currency against the other.
                 </p>
-                <p>Customer, a legal entity or an individual is a party to the Customer Agreement with Activepromarket in respect of making Transactions, subject to Margin Trading.
+                <p>Customer, a legal entity or an individual is a party to the Customer Agreement with Autoglobalfx in respect of making Transactions, subject to Margin Trading.
                 </p>
-                <p>Customer Agreement the agreement between Activepromarket and the Customer, which together govern the terms on which Activepromarket deals with the Customer.
+                <p>Customer Agreement the agreement between Autoglobalfx and the Customer, which together govern the terms on which Autoglobalfx deals with the Customer.
                 </p>
-                <p>Dealer an employee of Activepromarket who is authorized to execute the Customer’s Orders.
+                <p>Dealer an employee of Autoglobalfx who is authorized to execute the Customer’s Orders.
                 </p>
                 <p>Equity Balance + Floating Profit – Floating Loss. Equity is also referred to as net liquidation value.
                 </p>
@@ -111,14 +111,14 @@ include "includes/header.php";
 
                     Forex means foreign exchange.
                 </p>
-                <p>Force Majeure Event the following: (a) any act, event or occurrence (including, without limitation, any strike, riot or civil commotion, terrorism, war, act of God, accident, fire, flood, storm, interruption of power supply, electronic, communication equipment or supplier failure, civil unrest, statutory provisions, lock-outs) which, in Activepromarket‘s reasonable opinion, prevents Activepromarket from maintaining an orderly market in one or more of the Instruments; (b) the suspension, liquidation or closure of any market or the abandonment or failure of any event to which Activepromarket relates its Quotes; or (c) the imposition of limits or special or unusual terms on the trading in any such market or on any such event.
+                <p>Force Majeure Event the following: (a) any act, event or occurrence (including, without limitation, any strike, riot or civil commotion, terrorism, war, act of God, accident, fire, flood, storm, interruption of power supply, electronic, communication equipment or supplier failure, civil unrest, statutory provisions, lock-outs) which, in GlobalUtraFx‘s reasonable opinion, prevents Autoglobalfx from maintaining an orderly market in one or more of the Instruments; (b) the suspension, liquidation or closure of any market or the abandonment or failure of any event to which Autoglobalfx relates its Quotes; or (c) the imposition of limits or special or unusual terms on the trading in any such market or on any such event.
 
                     Free Margin funds on the Trading Account, which may be used to open a position. It is calculated as Equity less Margin. </p>
                 <p>
 
-                    Initial Margin the margin required by Activepromarket to open a position. The details for each Instrument are in the Contract Specifications.
+                    Initial Margin the margin required by Autoglobalfx to open a position. The details for each Instrument are in the Contract Specifications.
 
-                    Instant Execution the mechanism of providing Quotes to the Customer without a prior request. The Customer may make a Transaction anytime the Customer sees the Quotes Flow, provided by Activepromarket, in real-time.
+                    Instant Execution the mechanism of providing Quotes to the Customer without a prior request. The Customer may make a Transaction anytime the Customer sees the Quotes Flow, provided by Autoglobalfx, in real-time.
 
                     Instrument any Currency Pair. </p>
                 <p>
@@ -136,7 +136,7 @@ include "includes/header.php";
 
                     Manifest Error an error of a Dealer who opens/closes a position or executes an Order at the price which significantly differs from the price for this Instrument in the Quotes Flow at the moment of taking this action, or any other Dealer’s action in respect of the prices which are significantly different from the market prices.
 
-                    Margin the margin required by Activepromarket to maintain an Open Position. The Margin applicable to each Instrument is specified in the Contract Specifications.
+                    Margin the margin required by Autoglobalfx to maintain an Open Position. The Margin applicable to each Instrument is specified in the Contract Specifications.
 
                     Маrgin Level the percentage or ratio of Equity to Necessary Margin. It is calculated as (Equity / Necessary Margin) multiplied by 100%.
 
@@ -166,12 +166,12 @@ include "includes/header.php";
 
                     Order ID the unique identification number assigned to each Order placed through or on the Trading
 
-                    Order Reference Guide the guide containing information about the Order types available on the Trading Platform. This information is displayed on https://www.Activepromarket.com/
+                    Order Reference Guide the guide containing information about the Order types available on the Trading Platform. This information is displayed on https://www.Autoglobalfx.com/
 
                     OTC the over-the-counter market where contracts are not traded on an organized exchange. </p>
                 <p>
 
-                    Payment Instructions details for depositing funds to the Trading Account. Payment Instructions can be found on Activepromarket Web site.
+                    Payment Instructions details for depositing funds to the Trading Account. Payment Instructions can be found on Autoglobalfx Web site.
 
                     Pending Order a resting order or an instruction to open a position once the price has reached the level of the Order.
 
@@ -181,7 +181,7 @@ include "includes/header.php";
 
                     Quote Currency the second currency in the Currency Pair which can be bought or sold by the Customer for the Base Currency.
 
-                    Report/Trade Summary the file created by the Server, which records accurately to a second all Orders sent by the Customer to Activepromarket as well as the results of their execution.
+                    Report/Trade Summary the file created by the Server, which records accurately to a second all Orders sent by the Customer to Autoglobalfx as well as the results of their execution.
 
                     Risk Disclosure Statement the risk disclosure statement included in paragraphs 1 and 2 of
 
@@ -192,9 +192,9 @@ include "includes/header.php";
 
                     Sell Stop an Order to open a Short Position at the price lowers than the price at the moment of placing the Order.
 
-                    Server the MT4 Pro server program. This program is used to execute the Customer’s Orders and provide trading information in real-time mode (the content is defined by Activepromarket), subject to the mutual liabilities between Customer, the Forex Customer Agreement and its Terms.
+                    Server the MT4 Pro server program. This program is used to execute the Customer’s Orders and provide trading information in real-time mode (the content is defined by Autoglobalfx), subject to the mutual liabilities between Customer, the Forex Customer Agreement and its Terms.
 
-                    Services the services provided by Activepromarket to the Customer as set out in the Agreement.
+                    Services the services provided by Autoglobalfx to the Customer as set out in the Agreement.
 
                     Short Position a Sell position that appreciates in value if market prices fall.
 
@@ -222,9 +222,9 @@ include "includes/header.php";
 
                     Trading Account the unique personified registration system of all Completed Transactions, Open Positions, Orders and deposit/ withdrawal transactions in the Trading Platform.
 
-                    Trading Dispute a complaint or grievance relating to a Transaction or trade submitted, deleted, modified, offset/closed or executed on the Trading Platform or otherwise handled by Activepromarket.
+                    Trading Dispute a complaint or grievance relating to a Transaction or trade submitted, deleted, modified, offset/closed or executed on the Trading Platform or otherwise handled by Autoglobalfx.
 
-                    Trading Platform all programs and technical facilities which: (a) provide real-time Quotes; (b) allow Transactions to be made; (c) allow Orders to be placed, modified, deleted, offset and executed; and (d) calculate all mutual obligations between the Customer and Activepromarket. The trading platform consists of the Server and the Client Terminal.
+                    Trading Platform all programs and technical facilities which: (a) provide real-time Quotes; (b) allow Transactions to be made; (c) allow Orders to be placed, modified, deleted, offset and executed; and (d) calculate all mutual obligations between the Customer and Autoglobalfx. The trading platform consists of the Server and the Client Terminal.
 
                     Trailing Stop a complex Stop Loss Order where the Stop Loss price is set at a fixed percentage or number of points below the market price. On a Buy Order, if the market price rises, the Stop Loss price rises proportionately. If the price falls, the Stop Loss price does not change.
 
@@ -236,10 +236,10 @@ include "includes/header.php";
                 </h3>
                 <p>2.1. Transmission of Reports, Statements, Notices, and Other
                 </p>
-                <p>Communications. Reports, statements, notices and any other communications from Activepromarket will be made available by display electronically via Activepromarket Trading Platform, or may be transmitted electronically via e-mail or sent to the mailing address listed in the application, via U.S. mail or to such other address as the Customer may from time to time designate in writing to Activepromarket. All communications so made available or sent, whether by mail, display electronically, telegraph, messenger, e-mail, fax or otherwise, shall be deemed transmitted by Activepromarket when deposited in the United States mail, or when received by a transmitting agent or posted in Activepromarket Trading Platform or Website and are thus available for the Customer’s electronic access, or when e-mailed or faxed, and will also be deemed delivered to the Customer personally, whether actually received or accessed by the Customer or not. The Customer shall notify Activepromarket immediately of any change in the Customer’s address by e-mail to support@Activepromarket.com. All communications sent by the Customer shall not be deemed effective until accepted by Activepromarket.
+                <p>Communications. Reports, statements, notices and any other communications from Autoglobalfx will be made available by display electronically via Autoglobalfx Trading Platform, or may be transmitted electronically via e-mail or sent to the mailing address listed in the application, via U.S. mail or to such other address as the Customer may from time to time designate in writing to Autoglobalfx. All communications so made available or sent, whether by mail, display electronically, telegraph, messenger, e-mail, fax or otherwise, shall be deemed transmitted by Autoglobalfx when deposited in the United States mail, or when received by a transmitting agent or posted in Autoglobalfx Trading Platform or Website and are thus available for the Customer’s electronic access, or when e-mailed or faxed, and will also be deemed delivered to the Customer personally, whether actually received or accessed by the Customer or not. The Customer shall notify Autoglobalfx immediately of any change in the Customer’s address by e-mail to support@Autoglobalfx.com. All communications sent by the Customer shall not be deemed effective until accepted by Autoglobalfx.
                 </p>
                 <p>
-                    2.2 Consent to Other Communications. The Customer expressly invites Activepromarket, for the purpose of marketing financial services and products, from time to time, to make direct contact with the Customer by telephone, facsimile or otherwise. The Customer consents to such communications and agrees that the Customer will not consider such communication a breach of any of the Customer’s rights under any relevant data protection and/or privacy regulations. The Customer may opt out of receiving such communications by sending Activepromarket an e-mail at support@Activepromarket.com
+                    2.2 Consent to Other Communications. The Customer expressly invites Autoglobalfx, for the purpose of marketing financial services and products, from time to time, to make direct contact with the Customer by telephone, facsimile or otherwise. The Customer consents to such communications and agrees that the Customer will not consider such communication a breach of any of the Customer’s rights under any relevant data protection and/or privacy regulations. The Customer may opt out of receiving such communications by sending Autoglobalfx an e-mail at support@Autoglobalfx.com
                 </p>
                 <p>3- RELATIONSHIP BETWEEN THE COMPANY AND THE CLIENT
                 </p>
@@ -259,7 +259,7 @@ include "includes/header.php";
                 </p>
                 <h3>4- Client Classification
                 </h3>
-                <p>For the purposes of the services provided by Activepromarket under these Terms of business, we will act as principal and not as agent on your behalf. We shall treat you as a Retail Client, subject to the following:
+                <p>For the purposes of the services provided by Autoglobalfx under these Terms of business, we will act as principal and not as agent on your behalf. We shall treat you as a Retail Client, subject to the following:
                 </p>
                 <p>a-if you satisfy the definition of Professional Client or Eligible Counter-party, we may notify you that we will treat you as such and the terms detailed in Schedule 1 shall apply; and
                 </p>
@@ -281,13 +281,13 @@ include "includes/header.php";
                 </p>
                 <p> 5- IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW ACCOUNT
                 </p>
-                <p>5.1. Activepromarket recognizes that the USA PATRIOT Act, as amended from time to time (the “Act”), imposes important obligations on all financial firms for the detection, deterrence, and reporting of money laundering activities. Under the Act, money laundering is defined as any financial transaction using income derived from criminal activity including, but not limited to, drug trafficking, fraud, illegal gambling, and terrorism. Activepromarket has established the following policies to ensure compliance with all laws and regulations regarding money laundering.
+                <p>5.1. Autoglobalfx recognizes that the USA PATRIOT Act, as amended from time to time (the “Act”), imposes important obligations on all financial firms for the detection, deterrence, and reporting of money laundering activities. Under the Act, money laundering is defined as any financial transaction using income derived from criminal activity including, but not limited to, drug trafficking, fraud, illegal gambling, and terrorism. Autoglobalfx has established the following policies to ensure compliance with all laws and regulations regarding money laundering.
                 </p>
-                <p>5.2. Prior to the opening of any new Trading Account, Activepromarket will document the identity, nature of business, income, the source of funds, and investment objectives of each prospective customer. Therefore, Activepromarket will request the Customer’s driver’s license number, passport number and may request copies of the Customer’s identifying documents.
+                <p>5.2. Prior to the opening of any new Trading Account, Autoglobalfx will document the identity, nature of business, income, the source of funds, and investment objectives of each prospective customer. Therefore, Autoglobalfx will request the Customer’s driver’s license number, passport number and may request copies of the Customer’s identifying documents.
                 </p>
-                <p>5.3. On an on-going basis, Activepromarket will review Trading Account activity for evidence of transactions that may be indicative of money laundering activities. This review may include surveillance of: (a) money flows into and out of Trading Accounts, (b) the origin and destination of wire transfers, (c) non-economic transactions, and (d) other activity outside the normal course of business. Every officer, employee and associated person of Activepromarket is responsible for assisting in the firm’s efforts to uncover and report any activity that might constitute, or otherwise indicate or raise suspicions of, money laundering. To this end, Activepromarket provides continuing education and training of all such persons.
+                <p>5.3. On an on-going basis, Autoglobalfx will review Trading Account activity for evidence of transactions that may be indicative of money laundering activities. This review may include surveillance of: (a) money flows into and out of Trading Accounts, (b) the origin and destination of wire transfers, (c) non-economic transactions, and (d) other activity outside the normal course of business. Every officer, employee and associated person of Autoglobalfx is responsible for assisting in the firm’s efforts to uncover and report any activity that might constitute, or otherwise indicate or raise suspicions of, money laundering. To this end, Autoglobalfx provides continuing education and training of all such persons.
                 </p>
-                <p>5.4. Activepromarket will comply with all trade and economic sanctions imposed by the U.S. Office of Foreign Assets Control against targeted foreign countries and shall cooperate fully with government agencies, self-regulatory organisations, and law enforcement officials. As provided by the Act, Activepromarket may supply information about former, current or prospective customers to such bodies.
+                <p>5.4. Autoglobalfx will comply with all trade and economic sanctions imposed by the U.S. Office of Foreign Assets Control against targeted foreign countries and shall cooperate fully with government agencies, self-regulatory organisations, and law enforcement officials. As provided by the Act, Autoglobalfx may supply information about former, current or prospective customers to such bodies.
                 </p>
                 <h3>6-CLIENT ACCOUNTS
                 </h3>

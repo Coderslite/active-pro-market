@@ -9,7 +9,7 @@ include "includes/header.php";
   
     
       
-  <h1><span>About Activepromarket</span>
+  <h1><span>About Autoglobalfx</span>
 </h1>
 
 
@@ -43,7 +43,7 @@ include "includes/header.php";
       </div>
       <div class="pt-5 pl-4 pr-4 pb-5">
      
-      <!-- <a href="Payment%20Policy%20-%20Activepromarket.com.pdf">Payment Policy - Activepromarket.com.pdf<i class="fa fa-download"></i></a> -->
+      <!-- <a href="Payment%20Policy%20-%20Autoglobalfx.com.pdf">Payment Policy - Autoglobalfx.com.pdf<i class="fa fa-download"></i></a> -->
              </div>
               <div class="bg-gray pt-5 pl-4 pr-4 pb-5">
         <p>1.1 The company is financially responsible for the clients account balance in any particular moment.</p>
