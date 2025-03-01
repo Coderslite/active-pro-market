@@ -36,6 +36,7 @@ $subject = $_POST['subject'];
             $mail->Subject = $subject;
         //Set sender email
             $mail->setFrom('support@Autoglobalfx.com');
+            
 
     //Enable HTML
         $mail->isHTML(true);
