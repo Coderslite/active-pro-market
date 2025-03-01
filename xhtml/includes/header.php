@@ -16,7 +16,7 @@ if (mysqli_num_rows($userquery) > 0) {
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from makaanlelo.com/tf_products_007/Metaminerfc/xhtml/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 17:26:45 GMT -->
+<!-- Mirrored from makaanlelo.com/tf_products_007/Autoglobalfx/xhtml/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Jul 2022 17:26:45 GMT -->
 <head>
     <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
@@ -36,10 +36,10 @@ window.smartsupp||(function(d) {
 	<meta name="author" content="DexignZone" />
 	<meta name="robots" content="index, follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
-	<meta property="og:title" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
-	<meta property="og:description" content="Metaminerfc : Crypto Admin Dashboard  Bootstrap 5 Template" />
-	<meta property="og:image" content="../../../../Metaminerfc.dexignzone.com/xhtml/social-image.png"/>
+	<meta name="description" content="Autoglobalfx : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:title" content="Autoglobalfx : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:description" content="Autoglobalfx : Crypto Admin Dashboard  Bootstrap 5 Template" />
+	<meta property="og:image" content="../../../../Autoglobalfx.dexignzone.com/xhtml/social-image.png"/>
 	<meta name="format-detection" content="telephone=no">
     <title>Activeglobalfx -  User Dashboard </title>
     <!-- Favicon icon -->
@@ -75,7 +75,7 @@ window.smartsupp||(function(d) {
         ***********************************-->
         <div class="nav-header">
             <!-- <a href="index.php" class="brand-logo" >
-    <h2>METAMINERFX</h2> 
+    <h2>Autoglobalfx</h2> 
             </a> -->
 
             <div class="nav-control" style="margin-right: 50px;">
@@ -169,7 +169,7 @@ window.smartsupp||(function(d) {
 							<span class="nav-text">Trading History</span>
 						</a>
                     </li> -->
-                    <li><a class="ai-icon" href="mailto:support@metaminerfx.net" aria-expanded="false">
+                    <li><a class="ai-icon" href="mailto:support@Autoglobalfx.net" aria-expanded="false">
 							<i class="flaticon-381-notepad"></i>
 							<span class="nav-text">Support</span>
 						</a>

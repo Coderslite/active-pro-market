@@ -88,7 +88,7 @@ if (mysqli_num_rows($fetchProfitDeposit) > 0) {
     <!-- row -->
     <div class="container-fluid">
         <h2>Welcome, <?php echo $fName ?> !</h2>
-        <marquee>Welcome to METAMINERFX investment Platform</marquee>
+        <marquee>Welcome to Autoglobalfx investment Platform</marquee>
         <div class="row">
             <div class="col-xl-4 col-sm-6">
                 <div class="card overflow-hidden">
