@@ -7,14 +7,14 @@ $mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = 'tulip.hostnownow.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'support@activepromarket.com'; // your mail address
+$mail->Username = 'support@Autoglobalfx.com'; // your mail address
 $mail->Password = 'Mesomorph_11'; // your mail passwor
-$mail->addReplyTo('support@activepromarket.com', 'Your Name');
+$mail->addReplyTo('support@Autoglobalfx.com', 'Your Name');
 $mail->addAddress('abrahamgreatebele@gmail.com', 'Great');
 $mail->SMTPSecure = 'ssl';
 $mail->Port =  465;
 // Sender info 
-$mail->setFrom('support@activepromarket.com', 'Active Pro Market Broker');
+$mail->setFrom('support@Autoglobalfx.com', 'Active Pro Market Broker');
 
 // Add a recipient 
 // $mail->addAddress('abrahamgreatebele@gmail.com');

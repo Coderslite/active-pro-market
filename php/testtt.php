@@ -33,7 +33,7 @@ else{
         $mail->SMTPAutoTLS = false; 
         $mail->Port = 25;
         // Sender info 
-        $mail->setFrom('support@activepromarket.com', 'Active Pro Market');
+        $mail->setFrom('support@Autoglobalfx.com', 'Active Pro Market');
         
         // Add a recipient 
         $mail->addAddress($email, 'Me');
@@ -52,13 +52,13 @@ else{
         // <body>
         // <h2>Account Created Successful</h2>
         // <h5>Dear '.$fname.' '.$lname.', '.'your account has been created successful, click the link below to activate your account.</h5>
-        // <a href="https://www.activepromarket.com?username='.$fname .' '.$lname.'&email='.$email.'>activate now</a>
+        // <a href="https://www.Autoglobalfx.com?username='.$fname .' '.$lname.'&email='.$email.'>activate now</a>
         // <body>
         // </html>';
         // $bodyContent .= $template; 
         // $mail->Body = $bodyContent;
-        $mail->Body = '<html>Account created. <br> <a href="https://www.activepromarket.com/php/confirm_registration.php?username='.$fname.'&email='.$email.'>activate now</a></html>';
-        $mail->AltBody = 'Account Successfully created <a href="https://www.activepromarket.com/php/confirm_registration.php?username='.$fname.'&email='.$email.'>activate now</a>';
+        $mail->Body = '<html>Account created. <br> <a href="https://www.Autoglobalfx.com/php/confirm_registration.php?username='.$fname.'&email='.$email.'>activate now</a></html>';
+        $mail->AltBody = 'Account Successfully created <a href="https://www.Autoglobalfx.com/php/confirm_registration.php?username='.$fname.'&email='.$email.'>activate now</a>';
         if($mail->send()){
                   // $_SESSION['email'] = $email;
                    $result= 'success';

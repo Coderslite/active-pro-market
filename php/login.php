@@ -24,7 +24,7 @@ $query="SELECT * FROM users WHERE email='$email' && password='$password'";
                 //     $mail->SMTPAutoTLS = false; 
                 //     $mail->Port = 25; 
                     
-                //     $mail->setFrom('support@activepromarket.com', 'Active Pro Market');
+                //     $mail->setFrom('support@Autoglobalfx.com', 'Active Pro Market');
                 //     $mail->addAddress($email, 'Me');
                 //     $mail->Subject = 'Login Successful!';
                 //     // Set HTML

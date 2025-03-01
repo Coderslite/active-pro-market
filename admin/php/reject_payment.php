@@ -17,7 +17,7 @@ if ($query) {
                     $mail->SMTPAutoTLS = false; 
                     $mail->Port = 25; 
                     
-                    $mail->setFrom('support@activepromarket.com', 'Active Pro Market');
+                    $mail->setFrom('support@Autoglobalfx.com', 'Active Pro Market');
                     $mail->addAddress('abrahamgreatebele@gmail.com', 'Admin');
                     $mail->Subject = 'Payment Status!';
                     // Set HTML

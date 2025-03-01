@@ -17,7 +17,7 @@ $mail->SMTPAuth = false;
 $mail->SMTPAutoTLS = false; 
 $mail->Port = 25; 
 
-$mail->setFrom('support@activepromarket.com', 'Active Pro Market');
+$mail->setFrom('support@Autoglobalfx.com', 'Active Pro Market');
 $mail->addAddress('abrahamgreatebele@gmail.com', 'Me');
 $mail->Subject = $subject;
 // Set HTML
